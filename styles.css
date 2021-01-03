@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f0f3f9;
+    font-family: sans-serif;
+}
+/* Icons Star */
+i{
+    color: #fcd757;
+}
+/* Text Italic: Name and Last Name */
+.text-italic{
+    font-style: italic;
+    font-size: 14px;
+    color: #efac2e !important;
+    padding-top: 0 !important;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+p:last-of-type{
+    margin-top: -6px !important;
+}
+/* Put Font Family */
+h2, p{
+    font-family: "Open Sans", serif;
+}
+/* Slider: Put size you want here */
+.slider{
+    max-width: 70%;
+    margin: 70px auto !important;
+    position: relative;
+}
+/* Media Query size Slider 1040px*/
+@media screen and (max-width:1040px){
+    .slider{
+        max-width: 90%;
+    }
+}
+/* Media Query size Slider 900px*/
+@media screen and (max-width:900px){
+    .slider{
+        max-width: 100%;
+    }
+}
+/* Icons "Prev" and "Next" */
+/* Here you can change the color! */
+.slider .left-slide i, .slider .right-slide i{
+    color: #ffffff !important;
+}
+.slider .left-slide, .slider .right-slide{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(252, 215, 87, 0.5);
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -20px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.slider .left-slide:hover, .slider .right-slide:hover{
+    background: rgba(252, 215, 87, 0.7);
+    box-shadow: 0 0 5px #FAE588;
+}
+.slider .left-slide{
+    left: 30px;
+}
+.slider .right-slide{
+    right: 30px;
+}
+.slider .slider-items .item{
+    background: transparent;
+    width: 70%px;
+    height: 500px;
+    animation-name: fadeInSlide;
+    animation-duration: 1s;
+}
+/* Media Querie item: 1040px */
+@media screen and (max-width:1040px){
+    .slider .slider-items .item{
+        width: 90%;
+    }
+}
+/* Media Querie item: 900px */
+@media screen and (max-width:900px){
+    .slider .slider-items .item{
+        width: 100%;
+    }
+}
+.slider .slider-items .item .caption{
+    width: 70%;
+    margin:0 auto !important;
+    text-align: center !important;
+    padding-top: 80px;
+}
+/* Media Querie caption: 1040px */
+@media screen and (max-width:1040px){
+    .slider .slider-items .item .caption{
+        width: 60%;
+        margin:0 auto !important;
+    }
+}
+/* Media Querie caption: 900px */
+@media screen and (max-width:900px){
+    .slider .slider-items .item .caption{
+        width: 60%;
+        margin:0 auto !important;
+    }
+}
+.slider .slider-items .item .caption .div-stars{
+    padding: 15px 0 8px 0;
+}
+.slider .slider-items .item .caption p{
+    padding: 8px 0;
+}
+.slider .slider-items .item .caption h2,
+.slider .slider-items .item .caption p{
+    text-align: center;
+    color: #111301;
+}
+/* Images */
+.slider .slider-items .item figure{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto !important;
+}
+.slider .slider-items .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+/* Item : every slide */
+.slider .slider-items .item{
+    display: none;
+}
+/* Class "active" for Show every Slide */
+.active{
+    display: block !important;
+}
+/* Animation Fade In */
+@keyframes fadeInSlide {
+    0% { opacity: 0; }
+    100% { opacity: 100%; }
+}
+
+
